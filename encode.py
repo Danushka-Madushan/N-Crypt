@@ -81,7 +81,7 @@ def encode(t, k, n, s):
 	for x in x:e+=str(x)
 	for x in w:a+=str(x)
 	z = val(len(CRC(j)))
-	return z[0]+':'+Randomize(j)+':'+Randomize(e[1:]+a[1:])+':'+Randomize(CRC(j))+':'+z[1]
+	return z[0]+Randomize(j)+':'+Randomize(e[1:]+a[1:])+':'+Randomize(CRC(j))+z[1]
 
 def decode(t, k, n, s):
 	e, j = [], ''
@@ -115,3 +115,11 @@ def decode(t, k, n, s):
 			i = p(k[int(u)-1][int(r)-1], h[1])
 		j+=i
 	return j
+
+# Example
+'''
+a = encode('I am Awesome #)', KeyList, NumList, Special)
+print(a)
+x = decode(a, KeyList, NumList, Special)
+print(x)
+'''
