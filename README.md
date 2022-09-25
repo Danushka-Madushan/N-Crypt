@@ -6,7 +6,6 @@ this algorithm itself have few uniqe fetures,
 
 - It only use numbers for encryption process
 - Every singel time your encrypted string will be random 
-- Uses HMAC - Hash-based Message Authentication Code
 
 ## Installation
 
