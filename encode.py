@@ -1,3 +1,5 @@
+# N-Crypt by Danushka-Madushan (2022) https://github.com/Danushka-Madushan/N-Crypt
+
 import random
 import binascii
 
