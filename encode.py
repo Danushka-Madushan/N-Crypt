@@ -36,6 +36,10 @@ def Randomize(str):
 			break
 	return e[:-1][::-1]
 
+def fx(a, b):
+	x = lambda e,f,g,h: f+g if len(e[h]) < 4 else f+':'+g
+	return x(a.split(':'), a, b, -1) if len(a) > len(b) else x(b.split(':'), a, b, 0)
+
 def val(num):
 	while True:
 		a = random.randint(1, num-1)
@@ -81,7 +85,7 @@ def encode(t, k, n, s):
 	for x in x:e+=str(x)
 	for x in w:a+=str(x)
 	z = val(len(CRC(j)))
-	return z[0]+Randomize(j)+':'+Randomize(e[1:]+a[1:])+':'+Randomize(CRC(j))+z[1]
+	return fx(z[0], Randomize(j))+':'+Randomize(e[1:]+a[1:])+':'+fx(Randomize(CRC(j)), z[1])
 
 def decode(t, k, n, s):
 	e, j = [], ''
