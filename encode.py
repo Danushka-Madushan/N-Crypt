@@ -102,7 +102,7 @@ def decode(t, k, n, s):
 	j = j[::-1]
 	if r == CRC(j):pass
 	else:
-		return '0 - CRC FAIL'
+		return '0 - INVALID SIGNATURE'
 	k, n, s = ArrKey(x, k), ArrKey(w, n), ArrKey(x, s)
 	for g in range(len(j)):
 		e.append(j[:3])
