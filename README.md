@@ -22,14 +22,14 @@ Now you have your encryption algorithm in N-Crypt folder
 Now open encode.py with your favorite Code-Editor
 
 ## Encode
-```sh
+```python
 encoded = encode("Python is Awesome", KeyList, NumList, Special)
 print(encoded)
 ```
 
 It will give you the encoded text string, which is something like this
 
-```sh
+```json
 3:2:04:1:07:307:403:20:4:1:0:511:91:1040:3:3021:10:2073:0:7:2021:0:630:511:3:4:21:3145:782:63:26:08:0:1:4:914:7
 ```
 
@@ -37,7 +37,7 @@ for you to note - Every Singele time you generate a encoded string it will be ra
 
 ## Decode
 
-```sh
+```python
 decoded = decode("3:2:04:1:07:307:403:20:4:1:0:511:91:1040:3:3021:10:2073:0:7:2021:0:630:511:3:4:21:3145:782:63:26:08:0:1:4:914:7", KeyList, NumList, Special)
 print(decoded)
 ```
@@ -49,7 +49,7 @@ It will give you the decoded text string :)
 Want to Cusomize Great :)
 when you open encode.py You can see three different list with data like this
 
-```sh
+```python
 Special = [' ', '~`!@','$%^&','*()-','_+={','}[]|','\\/:;','"\'<>', ',.?#']
 KeyList = ['', 'abc', 'def', 'ghi', 'jkl', 'mno', 'pqrs', 'tuv', 'wxyz']
 NumList = ['01', '23', '45', '67', '89']
