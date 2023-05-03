@@ -29,7 +29,7 @@ print(encoded)
 
 It will give you the encoded text string, which is something like this
 
-```json
+```sh
 3:2:04:1:07:307:403:20:4:1:0:511:91:1040:3:3021:10:2073:0:7:2021:0:630:511:3:4:21:3145:782:63:26:08:0:1:4:914:7
 ```
 
